@@ -5,3 +5,19 @@ description = "Turn music into DTMF tone covers"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+xfail_strict = true
+filterwarnings = [
+  "error",
+  "ignore::DeprecationWarning",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.0",
+    "ty>=0.0.14",
+]

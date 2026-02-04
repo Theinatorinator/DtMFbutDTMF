@@ -20,3 +20,6 @@ force-sort-within-sections = true
 quote-style = "double"
 indent-style = "space"
 line-ending = "lf"
+
+[lint.per-file-ignores]
+"[!s][!r][!c]*/**" = ["INP001"]

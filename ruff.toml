@@ -1,0 +1,22 @@
+line-length = 79
+indent-width = 2
+
+[lint]
+select = ["ALL"]
+
+# Minimal ignores to avoid formatter / spec conflicts
+ignore = [
+  # "E203", # whitespace before ':'
+]
+
+[lint.pydocstyle]
+convention = "google"
+
+[lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"

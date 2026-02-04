@@ -1,0 +1,7 @@
+[project]
+name = "dtmfbutdtmf"
+version = "0.0.0"
+description = "Turn music into DTMF tone covers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
